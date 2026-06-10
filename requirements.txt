@@ -1,0 +1,37 @@
+# Core dependencies for document parsing, LLM orchestration, and LaTeX generation
+
+# Document parsing
+pdfplumber==0.10.3
+python-docx==1.1.0
+markdown==3.5.1
+beautifulsoup4==4.12.2
+
+# LLM and API clients
+openai==1.30.0
+
+# For HuggingFace local models (this is only a fallback option)
+transformers==4.38.2
+torch==2.2.1
+accelerate==0.27.2
+bitsandbytes==0.42.0
+sentencepiece==0.1.99
+protobuf==4.25.3
+
+# Utilities
+python-dotenv==1.0.0
+tiktoken==0.6.0  # for token counting
+
+# LaTeX compilation (optional, for local PDF generation)
+# Install tectonic separately via system package manager (recommended)
+# Or use: pylatexenc (not for compilation, but for escaping)
+pylatexenc==2.10
+
+# Logging and tracing
+colorlog==6.8.0
+python-json-logger==2.0.7
+
+# Data validation
+pydantic==2.6.1
+
+# For retries and backoff
+tenacity==8.2.3
